@@ -1,3 +1,5 @@
+import { createElement } from "react";
+
 //
 export function renderWithTemplate(template, parentElement, data, callback) {
     parentElement.innerHTML = template;
@@ -49,4 +51,23 @@ export async function loadHeaderFooter(callback){
     if (mediaPath) mediaPath.href =  `${base}sub-pages/media.html`
 
 }
+
+export async function getForumData(){
+    const response = await fetch(`${base}public/json/forum.json`);
+    const data = await response.json();
+   
+ /*   
+    const jasonDataContainer = document.getElementsByClassName("loadedData")
+    if (jasonDataContainer) {
+          renderForumData(){
+          const forumCard = document.createElement("div");
+          const cardTitle = document.createElement("h2");
+          
+
+
+     }
+    }
+     */
+    }
+  
 
