@@ -10,7 +10,7 @@ export default defineConfig({
      rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        events: resolve(__dirname, "src/sub-pages/events/index.html"),
+        events: resolve(__dirname, "src/sub-pages/events.html"),
         forum: resolve(__dirname, "src/sub-pages/forum.html"),
         media: resolve(__dirname, "src/sub-pages/media.html"),
         others: resolve(__dirname, "src/sub-pages/others.html"),
