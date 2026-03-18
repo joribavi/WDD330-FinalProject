@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # 4. Compiling with Vite (Tailwind se procesa aquí)
+      # 4. Compiling with Vite
       - name: Build project
         run: npm run build
 
@@ -35,6 +35,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: joribavi
+          user_email: github-actions[bot]@users.noreply.github.com
+
           publish_dir: ./dist
 
 
