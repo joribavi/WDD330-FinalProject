@@ -1,0 +1,41 @@
+name: Deploy Vite + Tailwind to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]   # Cambia "main" si tu rama principal es otra
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Clones repository
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # 2. Installs Node
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18   # o la versión que uses
+
+      # 3. Installing dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Compiling with Vite (Tailwind se procesa aquí)
+      - name: Build project
+        run: npm run build
+
+      # 5. Publish dist on GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+
+      
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
