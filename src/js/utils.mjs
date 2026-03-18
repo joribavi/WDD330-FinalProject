@@ -29,5 +29,9 @@ export async function loadHeaderFooter(callback){
     const logo = document.getElementById("logo"); 
     if (logo) logo.src = `${base}images/logo.png`;
 
+    //same principle for index page link at the header
+    const indexPage = document.getElementById("index");
+    if (indexPage) indexPage.href = `${base}index.html`;
+
 }
 
