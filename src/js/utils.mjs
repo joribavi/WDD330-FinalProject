@@ -33,5 +33,20 @@ export async function loadHeaderFooter(callback){
     const indexPage = document.getElementById("index");
     if (indexPage) indexPage.href = `${base}index.html`;
 
+    //using base to link the footer links and adapt to the page from where it is called
+
+    const studyPath = document.getElementById("studyPlanPath");
+    if (studyPath) studyPath.href = `${base}sub-pages/study-plan.html`
+
+    const eventsPath = document.getElementById("eventsPath");
+    if (eventsPath) eventsPath.href =  `${base}sub-pages/events.html`
+
+    const othersPath = document.getElementById("othersPath");
+    if (othersPath) othersPath.href =  `${base}sub-pages/others.html`
+
+
+    const mediaPath = document.getElementById("mediaPath");
+    if (mediaPath) mediaPath.href =  `${base}sub-pages/media.html`
+
 }
 
