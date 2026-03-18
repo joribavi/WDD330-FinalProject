@@ -6,3 +6,5 @@ await loadHeaderFooter();
 
 await searchInput();
 
+
+document.getElementById("logo").src = `${import.meta.env.BASE_URL}images/logo.png`

@@ -10,7 +10,8 @@ export async function loadTemplate(path) {
 }
 
 export async function loadHeaderFooter(callback){
-    const headerTemplate = await loadTemplate(`${import.meta.env.BASE_URL}partials/header.html`);
+    //import.meta.env.BASE_URL solves problem with subpages paths
+    const headerTemplate = await loadTemplate(`${import.meta.env.BASE_URL}partials/header.html`); 
     const footerTemplate = await loadTemplate(`${import.meta.env.BASE_URL}partials/footer.html`);
 
     const headerElement = document.querySelector(".my-Header");
@@ -25,3 +26,4 @@ export async function loadHeaderFooter(callback){
    
 
 }
+
