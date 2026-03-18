@@ -1,0 +1,43 @@
+[
+  {
+    "topic": "How can I add new elements to an Array in Javascript?",
+    "date": "May 25, 2024 at 10:00 am",
+    "description": "I am working in a university project and I need to add more elements to Array Objects",
+    "answers": [
+      "Hi!, you can use push() method to add the element at the end of the array",
+      "",
+      ""
+    ]
+  },
+  {
+    "topic": "How can I get the index value in a loop?",
+    "date": "Jun 5, 2024 at 10:00 am",
+    "description": "I have a for loop and I need to know the index of the iterated elements",
+    "answers": [
+      "",
+      "",
+      ""
+    ]
+  }
+  ,
+   {
+    "topic": "How I can I build a HTML Template",
+    "date": "July 15, 2023 at 11:00 am",
+    "description": "I have heard templates help to create dinamic sites, can you help me with that?",
+    "answers": [
+      "Hello, You can use the template tag and render the content inside of it afterwards with javascript",
+      "",
+      ""
+    ]
+  },
+   {
+    "topic": "How can I get data from a JSON File in Javascript?",
+    "date": "Jan 3, 2024 at 9:00 am",
+    "description": "I have a large amount of Data in JSON file format, how can I get the Data in Javascript?s",
+    "answers": [
+      "Hi, I would use the Fetch() method, that returns a Promise and after that you will get a Response object",
+      "",
+      ""
+    ]
+  }
+]
