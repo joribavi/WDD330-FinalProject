@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   root: "src/", //src will be the root directory for vite
+  base: '/WDD330-FinalProject/', 
   build: {
      outDir: '../dist' ,
      rollupOptions: {
