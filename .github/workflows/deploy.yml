@@ -2,7 +2,10 @@ name: Deploy Vite + Tailwind to GitHub Pages
 
 on:
   push:
-    branches: [ main ]   # Cambia "main" si tu rama principal es otra
+    branches: [ main ]   
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true     
+    
 
 jobs:
   build:
@@ -17,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18   # o la versión que uses
+          node-version: 18   # 
 
       # 3. Installing dependencies
       - name: Install dependencies
