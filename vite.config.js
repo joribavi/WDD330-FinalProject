@@ -6,7 +6,7 @@ export default defineConfig({
   root: "src/", //src will be the root directory for vite
   build: {
      outDir: '../dist' ,
-     rullupOptions: {
+     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
         events: resolve(__dirname, "src/sub-pages/events/index.html"),
