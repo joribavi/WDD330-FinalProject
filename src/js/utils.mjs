@@ -54,18 +54,38 @@ export async function getForumData(){
     const response = await fetch(`${base}public/json/forum.json`);
     const data = await response.json();
    
- /*   
-    const jasonDataContainer = document.getElementsByClassName("loadedData")
+
+    
+    const jasonDataContainer = document.querySelector(".loadedData")
     if (jasonDataContainer) {
-          renderForumData(){
+          const renderForumData= (comments) => {
+          comments.forEach(comment =>
+         {
           const forumCard = document.createElement("div");
           const cardTitle = document.createElement("h2");
+          const cardDate = document.createElement("p");
+          const cardDescription = document.createElement("p");
+          const cardAnswers = document.createElement("p");
+
+          cardTitle.textContent = `${comment.topic}`;
+          cardDate.textContent = `${comment.date}`;
+          cardDescription.textContent = `${comment.description}`;
+          cardAnswers.textContent = `${comment.answers}`;
+
+          jasonDataContainer.appendChild(forumCard);
+          forumCard.appendChild(cardTitle);
+          forumCard.appendChild(cardDate);
+          forumCard.appendChild(cardDescription);
+          forumCard.appendChild(cardAnswers);
+          
           
 
-
+         });    
+          renderForumData(data.comments)
      }
     }
-     */
+
+
     }
   
 

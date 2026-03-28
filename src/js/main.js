@@ -6,3 +6,4 @@ await loadHeaderFooter();
 
 await searchInput();
 
+await getForumData();
