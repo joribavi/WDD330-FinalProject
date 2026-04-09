@@ -51,38 +51,53 @@ export async function loadHeaderFooter(callback){
 }
 
 export async function getForumData(){
+    const base = `${import.meta.env.BASE_URL}`
     const response = await fetch(`${base}public/json/forum.json`);
+    console.log(response) //debug
     const data = await response.json();
+    console.log(data); //for testing purposes 
+   
    
 
     
-    const jasonDataContainer = document.querySelector(".loadedData")
-    if (jasonDataContainer) {
-          const renderForumData= (comments) => {
+    const jsonDataContainer = document.querySelector(".loadedData")
+    if (jsonDataContainer) {
+          function renderForumData (comments)  {
           comments.forEach(comment =>
          {
           const forumCard = document.createElement("div");
           const cardTitle = document.createElement("h2");
           const cardDate = document.createElement("p");
           const cardDescription = document.createElement("p");
-          const cardAnswers = document.createElement("p");
+          const cardAnswers = document.createElement("ul");
 
           cardTitle.textContent = `${comment.topic}`;
           cardDate.textContent = `${comment.date}`;
           cardDescription.textContent = `${comment.description}`;
-          cardAnswers.textContent = `${comment.answers}`;
 
-          jasonDataContainer.appendChild(forumCard);
+          comment.answers.forEach(answer=> {
+            const liElement = document.createElement("li");
+            liElement.textContent = answer;
+            cardAnswers.appendChild(liElement);
+          });
+
+         
           forumCard.appendChild(cardTitle);
           forumCard.appendChild(cardDate);
           forumCard.appendChild(cardDescription);
           forumCard.appendChild(cardAnswers);
+
+          jsonDataContainer.appendChild(forumCard);
+
+          //styles for created elements
+          forumCard.className = `mt-5 mb-5`;
+          cardTitle.className = `text-indigo-700 font-bold`;
+          cardAnswers.className = `bg-slate-300 mt-2`;
           
           
 
-         });    
-          renderForumData(data.comments)
-     }
+         });   
+     } renderForumData(data.comments);
     }
 
 
