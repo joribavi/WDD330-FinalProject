@@ -1,4 +1,5 @@
-[
+{
+  "comments": [
   {
     "topic": "How can I add new elements to an Array in Javascript?",
     "date": "May 25, 2024 at 10:00 am",
@@ -41,3 +42,4 @@
     ]
   }
 ]
+}
