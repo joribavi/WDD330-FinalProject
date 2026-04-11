@@ -1,0 +1,39 @@
+{
+  "channels": [
+    {
+      "name": "Bro Code",
+      "url": "https://www.youtube.com/@BroCodez",
+      "image": "https://img.youtube.com/vi/ix5jPkxsr7M/maxresdefault.jpg"
+    },
+    {
+      "name": "FreeCodeCamp",
+      "url": "https://www.youtube.com/@freecodecamp",
+      "image": "https://img.youtube.com/vi/PkZNo7MFNFg/maxresdefault.jpg"
+    },
+    {
+      "name": "Programming with Mosh",
+      "url": "https://www.youtube.com/@programmingwithmosh",
+      "image": "https://img.youtube.com/vi/_uQrJ0TkZlc/maxresdefault.jpg"
+    },
+    {
+      "name": "Traversy Media",
+      "url": "https://www.youtube.com/@TraversyMedia",
+      "image": "https://img.youtube.com/vi/3fUBs3XlMqQ/maxresdefault.jpg"
+    },
+    {
+      "name": "The Net Ninja",
+      "url": "https://www.youtube.com/@NetNinja",
+      "image": "https://img.youtube.com/vi/2E9RqXqVqJQ/maxresdefault.jpg"
+    },
+    {
+      "name": "Web Dev Simplified",
+      "url": "https://www.youtube.com/@WebDevSimplified",
+      "image": "https://img.youtube.com/vi/1XqVqJqZqQ0/maxresdefault.jpg"
+    },
+    {
+      "name": "Fireship",
+      "url": "https://www.youtube.com/@Fireship",
+      "image": "https://img.youtube.com/vi/0XqVqJqZqQ0/maxresdefault.jpg"
+    }
+  ]
+}
