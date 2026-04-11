@@ -51,8 +51,11 @@ export async function loadHeaderFooter(callback){
 }
 
 export async function getForumData(){
+    /*
     const base = `${import.meta.env.BASE_URL}`
-    const response = await fetch(`${base}json/forum.json`);
+    const response = await fetch(`${base}public/json/forum.json`);
+    */
+    const response = await fetch("../public/json/forum.json");
     console.log(response) //debug
     const data = await response.json();
     console.log(data); //for testing purposes 
