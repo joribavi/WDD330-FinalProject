@@ -114,7 +114,7 @@ export async function getMedia() {
     const jsonDataContainer = document.querySelector(".loadedMedia")
 
     if(jsonDataContainer) {
-           function renderMedia (channels)  {
+           function renderMedia(channels)  {
           channels.forEach(channel =>
          {
           const mediaCard = document.createElement("div");
@@ -128,30 +128,35 @@ export async function getMedia() {
           cardImage.src = `${channel.image}`;
 
         
-          });
+        
 
          
           mediaCard.appendChild(cardTitle);
           mediaCard.appendChild(cardUrl);
-          mediaCardCard.appendChild(cardImage);
+          mediaCard.appendChild(cardImage);
+
+
          
 
           jsonDataContainer.appendChild(mediaCard);
 
           //styles for created elements
-          mediaCard.className = `mt-5 mb-5`;
+          jsonDataContainer.className = `flex flex-wrap gap-4 justify-center`;
+          mediaCard.className = `mt-5 mb-5 max-w-sm`;
           cardTitle.className = `text-indigo-700 font-bold`;
+          cardUrl.className = `mb-2`;
+          
 
           
           
 
-         } 
+        });
      } renderMedia(data.channels);
     
 
     }
 
-
+}
 
 
 /*

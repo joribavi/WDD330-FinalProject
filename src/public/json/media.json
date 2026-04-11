@@ -18,22 +18,22 @@
     {
       "name": "Traversy Media",
       "url": "https://www.youtube.com/@TraversyMedia",
-      "image": "https://img.youtube.com/vi/3fUBs3XlMqQ/maxresdefault.jpg"
+      "image": "https://img.youtube.com/vi/3fUBs3XlMqQ/hqdefault.jpg"
     },
     {
       "name": "The Net Ninja",
       "url": "https://www.youtube.com/@NetNinja",
-      "image": "https://img.youtube.com/vi/2E9RqXqVqJQ/maxresdefault.jpg"
+      "image": "https://img.youtube.com/vi/2E9RqXqVqJQ/hqdefault.jpg"
     },
     {
       "name": "Web Dev Simplified",
       "url": "https://www.youtube.com/@WebDevSimplified",
-      "image": "https://img.youtube.com/vi/1XqVqJqZqQ0/maxresdefault.jpg"
+      "image": "https://img.youtube.com/vi/1XqVqJqZqQ0/hqdefault.jpg"
     },
     {
       "name": "Fireship",
       "url": "https://www.youtube.com/@Fireship",
-      "image": "https://img.youtube.com/vi/0XqVqJqZqQ0/maxresdefault.jpg"
+      "image": "https://img.youtube.com/vi/0XqVqJqZqQ0/hqdefault.jpg"
     }
   ]
 }
