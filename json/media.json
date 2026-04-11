@@ -3,7 +3,7 @@
     {
       "name": "Bro Code",
       "url": "https://www.youtube.com/@BroCodez",
-      "image": "https://img.youtube.com/vi/ix5jPkxsr7M/maxresdefault.jpg"
+      "image": "https://img.youtube.com/vi/xTtL8E4LzTQ/maxresdefault.jpg"
     },
     {
       "name": "FreeCodeCamp",
@@ -16,24 +16,29 @@
       "image": "https://img.youtube.com/vi/_uQrJ0TkZlc/maxresdefault.jpg"
     },
     {
-      "name": "Traversy Media",
-      "url": "https://www.youtube.com/@TraversyMedia",
-      "image": "https://img.youtube.com/vi/3fUBs3XlMqQ/hqdefault.jpg"
+      "name": "SuperSimpleDev",
+      "url": "https://www.youtube.com/@SuperSimpleDev",
+      "image": "https://img.youtube.com/vi/G3e-cpL7ofc/maxresdefault.jpg"
     },
     {
       "name": "The Net Ninja",
       "url": "https://www.youtube.com/@NetNinja",
-      "image": "https://img.youtube.com/vi/2E9RqXqVqJQ/hqdefault.jpg"
+      "image": "https://img.youtube.com/vi/4okmgMzPwZ8/maxresdefault.jpg"
     },
     {
       "name": "Web Dev Simplified",
       "url": "https://www.youtube.com/@WebDevSimplified",
-      "image": "https://img.youtube.com/vi/1XqVqJqZqQ0/hqdefault.jpg"
+      "image": "https://img.youtube.com/vi/5MQb6pVkQHA/maxresdefault.jpg"
     },
     {
       "name": "Fireship",
       "url": "https://www.youtube.com/@Fireship",
-      "image": "https://img.youtube.com/vi/0XqVqJqZqQ0/hqdefault.jpg"
+      "image": "https://img.youtube.com/vi/66tfvFeALBQ/maxresdefault.jpg"
+    },
+    {
+      "name": "Tina Huang",
+      "url": "https://www.youtube.com/@TinaHuang1",
+      "image": "https://img.youtube.com/vi/oshQg1uSRvg/maxresdefault.jpg"
     }
   ]
 }
