@@ -104,4 +104,56 @@ export async function getForumData(){
 
     }
   
+export async function getMedia() {
+    const base = `${import.meta.env.BASE_URL}`
+    const response = await fetch(`${base}json/media.json`);
+    console.log(response) //debug
+    const data = await response.json();
+    console.log(data); //for testing purposes 
 
+    const jsonDataContainer = document.querySelector(".loadedMedia")
+
+    if(jsonDataContainer) {
+           function renderMedia (channels)  {
+          channels.forEach(channel =>
+         {
+          const mediaCard = document.createElement("div");
+          const cardTitle = document.createElement("h2");
+          const cardUrl = document.createElement("p");
+          const cardImage = document.createElement("img");
+      
+
+          cardTitle.textContent = `${channel.name}`;
+          cardUrl.textContent = `${channel.url}`;
+          cardImage.src = `${channel.image}`;
+
+        
+          });
+
+         
+          mediaCard.appendChild(cardTitle);
+          mediaCard.appendChild(cardUrl);
+          mediaCardCard.appendChild(cardImage);
+         
+
+          jsonDataContainer.appendChild(mediaCard);
+
+          //styles for created elements
+          mediaCard.className = `mt-5 mb-5`;
+          cardTitle.className = `text-indigo-700 font-bold`;
+
+          
+          
+
+         } 
+     } renderMedia(data.channels);
+    
+
+    }
+
+
+
+
+/*
+
+*/

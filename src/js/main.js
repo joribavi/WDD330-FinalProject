@@ -1,4 +1,4 @@
-import { loadHeaderFooter, getForumData } from "./utils.mjs";
+import { loadHeaderFooter, getForumData, getMedia } from "./utils.mjs";
 import { searchInput } from "./search.mjs";
 import { addNewProject } from "./studyPlan.mjs";
 
@@ -20,7 +20,9 @@ await getForumData();
 
 }
 
-
+if(currentPage.includes("media")){
+  await getMedia();
+}
 const studyPlanForm = document.getElementById("studyForm");
 studyPlanForm.addEventListener("submit", addNewProject);
 
