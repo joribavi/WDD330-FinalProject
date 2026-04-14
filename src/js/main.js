@@ -1,6 +1,6 @@
 import { loadHeaderFooter, getForumData, getMedia } from "./utils.mjs";
 import { searchInput } from "./search.mjs";
-import { addNewProject } from "./studyPlan.mjs";
+import { addNewProject, loadSavedProjects } from "./studyPlan.mjs";
 
 
 
@@ -26,6 +26,9 @@ if(currentPage.includes("media")){
 const studyPlanForm = document.getElementById("studyForm");
 studyPlanForm.addEventListener("submit", addNewProject);
 
+if(currentPage.includes("study-plan")){
+loadSavedProjects();
+}
 
 /*
 document.addEventListener("DOMContentLoaded", ()=>{
