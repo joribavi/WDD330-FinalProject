@@ -1,0 +1,74 @@
+{
+  "events": [
+    {
+      "title": "Bootcamp 2026",
+      "description": "programmers meeting",
+      "date": "April 30th",
+      "place": "online at the platform",
+      "price": "for Free"
+    },
+    {
+      "title": "Global Dev Summit",
+      "description": "Keynotes and workshops on cloud computing",
+      "date": "May 12th",
+      "place": "San Francisco, USA",
+      "price": "$299"
+    },
+    {
+      "title": "AI Hackathon 2026",
+      "description": "Build AI-powered apps in 24 hours",
+      "date": "June 5th",
+      "place": "online at the platform",
+      "price": "for Free"
+    },
+    {
+      "title": "Backend Fest",
+      "description": "Scalability and microservices deep dive",
+      "date": "June 20th",
+      "place": "Berlin, Germany",
+      "price": "€150"
+    },
+    {
+      "title": "Frontend Universe",
+      "description": "React, Vue, and modern web technologies",
+      "date": "July 8th",
+      "place": "online at the platform",
+      "price": "for Free"
+    },
+    {
+      "title": "Mobile World Congress Developers",
+      "description": "iOS and Android development trends",
+      "date": "July 22nd",
+      "place": "Singapore",
+      "price": "$450"
+    },
+    {
+      "title": "Cybersecurity Code Camp",
+      "description": "Secure coding and ethical hacking",
+      "date": "August 3rd",
+      "place": "online at the platform",
+      "price": "$50"
+    },
+    {
+      "title": "DevOps Days Tokyo",
+      "description": "CI/CD, Kubernetes, and automation",
+      "date": "August 17th",
+      "place": "Tokyo, Japan",
+      "price": "¥8000"
+    },
+    {
+      "title": "Game Dev Marathon",
+      "description": "Create a game from scratch in one weekend",
+      "date": "September 1st",
+      "place": "online at the platform",
+      "price": "for Free"
+    },
+    {
+      "title": "Latin America Code Fest",
+      "description": "Open source and community-driven projects",
+      "date": "September 14th",
+      "place": "Buenos Aires, Argentina",
+      "price": "ARS 5000"
+    }
+  ]
+}

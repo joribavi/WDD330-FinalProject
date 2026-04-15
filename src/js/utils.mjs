@@ -158,7 +158,122 @@ export async function getMedia() {
 
 }
 
+export async function getEvents(){
+  const base = `${import.meta.env.BASE_URL}`
+  const response = await fetch(`${base}json/events.json`);
+  const data = await response.json();
+  const jsonDataContainer = document.querySelector(".loadedEvents")
+   //styles for created elements
+   jsonDataContainer.className = `flex flex-wrap gap-4 justify-center m-5`;
 
-/*
+   if(jsonDataContainer) {
+           function renderEvents(events)  {
+          events.forEach(event =>
+         {
+          const eventCard = document.createElement("div");
+          const eventTitle = document.createElement("h2");
+          const eventDescription = document.createElement("p");
+          const eventDate = document.createElement("p");
+          const eventPlace = document.createElement("p");
+          const eventPrice = document.createElement("p");
+      
 
-*/
+          eventTitle.textContent = `${event.title}`;
+          eventDescription.textContent = `${event.description}`;
+          eventDate.textContent = `${event.date}`;
+          eventPlace.textContent = `${event.place}`;
+          eventPrice.textContent = `${event.price}`
+
+             
+
+         
+          eventCard.appendChild(eventTitle);
+          eventCard.appendChild(eventDescription);
+          eventCard.appendChild(eventDate);
+          eventCard.appendChild(eventPlace);
+          eventCard.appendChild(eventPrice);
+          
+          //styles
+          eventCard.className = `bg-cyan-600 mt-5 mb-5 max-w-sm border border-indigo-600 p-5 rounded-sm hover:bg-sky-700`;
+          eventTitle.className = `text-gray-300 font-bold`;
+          eventDescription.className = `mb-2`;
+          eventPlace.className = `mb-2`;
+          eventPrice.className = `mb-2`;
+          
+
+         
+
+          jsonDataContainer.appendChild(eventCard);
+           });
+         
+   
+
+         
+
+          
+          
+
+       
+     } renderEvents(data.events);
+    
+    }
+
+}
+
+
+  export async function getResources(){
+     const base = `${import.meta.env.BASE_URL}`
+  const response = await fetch(`${base}json/resources.json`);
+  const data = await response.json();
+  const jsonDataContainer = document.querySelector(".loadedResources")
+  
+
+   if(jsonDataContainer) {
+           function renderResources(resources)  {
+          resources.forEach(resource =>
+         {
+          const resourceCard = document.createElement("div");
+          const resourceTitle = document.createElement("h2");
+          const resourceDescription = document.createElement("p");
+          const resourceLink = document.createElement("a");
+     
+
+          resourceTitle.textContent = `${resource.title}`;
+          resourceDescription.textContent = `${resource.description}`;
+          resourceLink.textContent = `${resource.official_link}`;
+         
+
+             
+
+         
+          resourceCard.appendChild(resourceTitle);
+          resourceCard.appendChild(resourceDescription);
+          resourceCard.appendChild(resourceLink);
+          
+          
+          //styles
+          resourceCard.className = `bg-cyan-600 mt-5 mb-5 max-w-sm border border-indigo-600 p-5 rounded-sm hover:bg-sky-700`;
+          resourceTitle.className = `text-gray-300 font-bold`;
+          resourceDescription.className = `mb-2`;
+          jsonDataContainer.className = `flex flex-wrap gap-4 justify-center m-5`; 
+          
+
+         
+
+          jsonDataContainer.appendChild(resourceCard);
+           });
+         
+   
+
+         
+
+          
+          
+
+       
+     } renderResources(data.resources);
+    
+    }
+
+            
+  }

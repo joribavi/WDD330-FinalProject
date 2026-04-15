@@ -1,8 +1,7 @@
-import { loadHeaderFooter, getForumData, getMedia } from "./utils.mjs";
+import { loadHeaderFooter, getForumData, getMedia, getEvents, getResources } from "./utils.mjs";
 import { searchInput } from "./search.mjs";
-import { addNewProject, loadSavedProjects } from "./studyPlan.mjs";
-
-
+//import { addNewProject, loadSavedProjects } from "./studyPlan.mjs";
+import {createNewProject, renderAllProjects} from "./studyPlan.mjs";
 
 
 await loadHeaderFooter();
@@ -23,57 +22,26 @@ await getForumData();
 if(currentPage.includes("media")){
   await getMedia();
 }
+/*
 const studyPlanForm = document.getElementById("studyForm");
 studyPlanForm.addEventListener("submit", addNewProject);
+*/
+if(currentPage.includes("study-plan")){
+  createNewProject("Study Plan");
+  renderAllProjects();
+  
+}
 
+
+if(currentPage.includes("events")){
+await getEvents();  
+}
+
+if(currentPage.includes("others")){
+ await getResources(); 
+}
+/*
 if(currentPage.includes("study-plan")){
 loadSavedProjects();
 }
-
-/*
-document.addEventListener("DOMContentLoaded", ()=>{
-const studyPlanForm = document.querySelector("form");
-const projectContainer = document.getElementById("projectContainer"); 
-if (studyPlanForm && projectContainer) {
-studyPlanForm.addEventListener("submit", addNewProject)
-  
-
-  /*
-  const savedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-  console.log("localStorage Content:", savedProjects);
-  
-  savedProjects.forEach(text => {
-    const project = document.createElement("div");
-    project.textContent = text;
-    projectContainer.appendChild(project);
-  });
-
-
-};   
-
-});
-
-/*
- 
-document.addEventListener("DOMContentLoaded", ()=>{
-const studyPlanForm = document.querySelector("form");
-const projectContainer = document.getElementById("projectContainer"); 
-if (studyPlanForm) {
-studyPlanForm.addEventListener("submit", addNewProject)
-}  
-
-if (projectContainer) {
-  
-  const savedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-  console.log("localStorage Content:", savedProjects);
-  
-  savedProjects.forEach(text => {
-    const project = document.createElement("div");
-    project.textContent = text;
-    projectContainer.appendChild(project);
-  });
-}
-
-}) ;   
-
 */
