@@ -1,0 +1,44 @@
+{
+  "resources": [
+    {
+      "title": "W3Schools",
+      "description": "Tutorials and references on web development languages including HTML, CSS, JavaScript, PHP, SQL, and Python",
+      "official_link": "https://www.w3schools.com"
+    },
+    {
+      "title": "Free Code Camp",
+      "description": "Interactive learning platform offering free coding certifications in web development, data visualization, and machine learning",
+      "official_link": "https://www.freecodecamp.org"
+    },
+    {
+      "title": "Khan Academy",
+      "description": "Non-profit educational platform providing free courses in programming, computer science, and mathematics for all ages",
+      "official_link": "https://www.khanacademy.org"
+    },
+    {
+      "title": "GeeksforGeeks",
+      "description": "Computer science portal for geeks featuring algorithms, data structures, programming languages, and coding interview preparation",
+      "official_link": "https://www.geeksforgeeks.org"
+    },
+    {
+      "title": "CodePen",
+      "description": "Social development environment for front-end designers and developers to build and showcase websites, experiments, and prototypes",
+      "official_link": "https://codepen.io"
+    },
+    {
+      "title": "MDN Web Docs",
+      "description": "Mozilla's comprehensive documentation for web technologies including HTML, CSS, JavaScript, and Web APIs",
+      "official_link": "https://developer.mozilla.org"
+    },
+    {
+      "title": "Stack Overflow",
+      "description": "Community-driven Q&A platform for professional and enthusiast programmers to solve coding problems",
+      "official_link": "https://stackoverflow.com"
+    },
+    {
+      "title": "Codecademy",
+      "description": "Interactive platform offering free and paid coding courses in various programming languages and technologies",
+      "official_link": "https://www.codecademy.com"
+    }
+  ]
+}

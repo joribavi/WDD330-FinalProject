@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cody-Your Friend Learning Tool</title>
-    <script type="module" crossorigin src="/WDD330-FinalProject/assets/main-NqCGdRll.js"></script>
-    <link rel="stylesheet" crossorigin href="/WDD330-FinalProject/assets/main-DkhOsVli.css">
+    <script type="module" crossorigin src="/WDD330-FinalProject/assets/main-mzxWuauA.js"></script>
+    <link rel="stylesheet" crossorigin href="/WDD330-FinalProject/assets/main-BbRrOP7v.css">
   </head>
   <body class="bg-violet-100 md:mx-10 font-(inter:sans-serif)">
     <header class="my-Header bg-[#004369] flex items-center justify-between  p-5 mb-5"></header>
     <main>
       <h1 class="font-bold text-center m-5">Study Plan Section</h1>
-       <form onsubmit="addNewProject(event)" id="studyForm" class="m-5" >
-            <input type="text" name="projectText" autocomplete="off" placeholder="New Project" class="roundBorder">
-            <button type="submit" class="addProjectButton p-2 bg-blue-500 rounded-full text-white">+</button>
-           
+    
+
+        <form id="taskForm">
+          <input type="text" name="projectText" autocomplete="off" placeholder="Please add a new task" class="roundBorder">
+          <button type="submit" class="p-2 bg-blue-500 rounded-full text-white">+</button>
         </form>
         <div id="projectContainer">
          
         </div>
-      
+        <div id="savedProjectsList"></div>  
     </main>
     <footer class="my-Footer bg-[#004369] text-white flex flex-col items-center p-5"></footer>
   </body>
