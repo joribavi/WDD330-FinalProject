@@ -121,8 +121,7 @@ export function createNewProject(title){
 
   const myForm = document.getElementById("taskForm");
   if (myForm){
-    const newForm = myForm.cloneNode(true); //clone form without event listeners
-    myForm.parentNode.replaceChild(newForm, myForm); // replacing old form
+  
     //add only 1 event listener to the new form 
     myForm.addEventListener("submit", (event)=>{
       myProject.addNewTask(event);
